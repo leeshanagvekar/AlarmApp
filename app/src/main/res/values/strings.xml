@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AlarmApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="addAlarm">Add new alarm</string>
+    <string name="details_alarm_tone">Alarm Tone</string>
+    <string name="details_alarm_tone_default">Select an alarm tone</string>
+    <string name="title_activity_add_alarm">AddAlarm</string>
+    <string name="positive">Snooze</string>
+    <string name="negative">Dismiss</string>
+</resources>

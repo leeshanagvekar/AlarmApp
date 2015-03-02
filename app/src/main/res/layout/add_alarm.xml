@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_row_end_color"
+    >
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="Time"
+        android:id="@+id/TextView1"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:layout_alignTop="@+id/timeButton"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id="@+id/timeTextView"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:hint="00:00 (24hr)"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Time"
+        android:id="@+id/timeButton"
+        android:layout_alignBottom="@+id/timeTextView"
+        android:layout_toEndOf="@+id/setAlarm"
+        android:onClick="setTime"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Date"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/timeButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="dd/mm/yyyy"
+        android:id="@+id/textView3"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:paddingLeft="10dp"
+        android:layout_above="@+id/alarm_ringtone_container"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Date"
+        android:id="@+id/dateButton"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignStart="@+id/timeButton"
+        android:onClick="setDate"/>
+
+    <LinearLayout
+        android:id="@+id/alarm_ringtone_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_touch_selector"
+        android:orientation="vertical"
+        android:layout_below="@+id/dateButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            android:id="@+id/alarm_label_tone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/details_alarm_tone"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/alarm_label_tone_selection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="@string/details_alarm_tone_default"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Alarm"
+        android:id="@+id/setAlarm"
+        android:layout_below="@+id/alarm_ringtone_container"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginTop="88dp" />
+
+</RelativeLayout>

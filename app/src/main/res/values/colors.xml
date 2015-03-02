@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#0019FF</color>
+    <color name="list_row_start_color">#000000</color>
+    <color name="list_row_end_color">#000000</color>
+    <color name="list_row_hover_end_color">#EBEEF0</color>
+    <color name="list_row_hover_start_color">#EBEEF0</color>
+</resources>
